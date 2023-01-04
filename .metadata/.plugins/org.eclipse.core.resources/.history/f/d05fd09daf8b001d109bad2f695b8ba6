@@ -1,0 +1,19 @@
+package com.educacionit.dao;
+
+import com.educacionit.entities.AutoVO;
+
+public class Test_AutoDao {
+
+	public static void main(String[] args) {
+		
+		AutoVO auto1 = new AutoVO("Toyota","Etios","Blanco", "JAV 123");
+		AutoVO auto2 = new AutoVO("Renault","Clio","Gris", "JAV 456");
+		AutoVO auto3 = new AutoVO("Renault","Clio","Gris", "JAV 456");
+		
+		AutoDAO auto_DAO = new AutoDAO();
+		
+		auto_DAO.insertar_auto(auto1);
+
+	}
+
+}

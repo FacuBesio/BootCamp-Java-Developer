@@ -1,0 +1,5 @@
+package com.educacionit.modelo;
+
+public class PersonaVO {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;BootCamp JavaDev - Clase14 (SQL)&apos; to &apos;BootCamp JavaDev - Clase14 (SQL parte1)&apos;&#x0D;&#x0A;- Original element: &apos;BootCamp JavaDev - Clase14 (SQL)&apos;&#x0D;&#x0A;- Renamed element: &apos;BootCamp JavaDev - Clase14 (SQL)&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;BootCamp JavaDev - Clase14 (SQL)&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=BootCamp JavaDev - Clase14 \(SQL)" name="BootCamp JavaDev - Clase14 (SQL parte1)" references="true" stamp="1672608362686" version="1.0"/>
+</session>

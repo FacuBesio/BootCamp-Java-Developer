@@ -1,0 +1,133 @@
+/*
+ 
+											● PARADIGMA DE OBJETOS
+											 
+	Un Paradigma es un 'Modelo' o 'Patron' en cualquier disciplina cienti­fica. Es una forma de resolver los problemas. Admite la 
+	existencia de multiples soluciones para un mismo problema y cada 'forma', 'modelo' o 'propuesta' de abordar la vamos a 
+	llamar 'Paradigma'. El 'Paradigma de Programacion Orientada a Objetos'(POO) es la implentacion de un 'Paradigma', una 
+	propuesta mas, dentro de todos los Paradigmas que existen en la Programacion. 
+
+
+	• PROGRAMACIÓN ORIENTADA A OBJETOS: "POO"  
+ 	  ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+	Un 'MODELO' es una abstraccion de la realidad, una respresentación de la realidad simplificada, con el objetivo final de 
+	pasar del 'Modelo' a la 'Realidad'. De la misma forma los Sistemas de Informacion deben ser Modelados, respresentarlos 
+	mediante un esquema previo, para luego poder tomar como referencia el Modelo y contruir en base al mismo.  
+
+	. OOP (Object Oriented Programming)
+	
+	El MODELADO ORIENTADO A OBJETOS consiste en interpretar un sistema como partes independientes que se comunican entre sí­. Las 
+	partes independientes se denominan 'OBJETOS'. Dichos 'Objetos' tendran comunicación e intereacción entre sí a través 
+	de 'Mensajes'. Es decir, se tratara de representar la realidad (proyecto, programa) como 'Objetos' realacionados entre si 
+	comunicandose a través de Mensajes (Atributos y metodos). 
+	
+	Antes se entendia a el Programa o Poryecto como una sola pieza, eso acumulaba muchas lineas de codigo, y por la tanto era 
+	complejo tanto de desarollar como de matener. A través del 'MODELADO ORIENTADO A OBJETOS' se tiene sus partes facilmente 
+	separadas, en donde cada burbuja resuelve un problema mucho mas chico y luego se integra. Cuando hay un problema o 
+	modificación solo hay que ubicar cual seria la burbuja correspondiente a modificar, y no es necesario modificar todo el 
+	Programa. Por otro lado es mas facil reutilizar 'burbujas' que Programas enteros. 
+	
+	El OOP entonces se basa en el concepto de agrupar 'Codigo' (Métodos) y 'Datos' (Atributos) juntos en una misma unidad 
+	llamada 'CLASE'. Es decir, un Molde para crear Objetos.
+	
+	*Ventajas de OOP:
+	- Altamente Escalable (se puede mejorar, se puede modificar facilmente)
+	- Fácil de Mantener   (al estar todo independizado es mas facil de corregir los errores de forma puntal, sin tener que 
+	                       cambiar todo)
+	- Fácil de Reutilizar (se puede reutilizar en mas de un programa)
+	
+	
+	• CLASES: 
+	  
+	Una CLASE es un conjunto de OBJETOS con caracteristicas similares. Las 'Clases' nos van a ayudar a definir 'Objetos', seran
+	nuestro 'Molde' para crear cada 'Objeto' nuevo. Generalmente las 'Clases' suelen detectarse como 'SUSTANTIVOS' en 'SINGULAR'. 
+	Poseen Atributos y Métodos. Los Atributos seran las variables(datos) de cada Objeto, y los Métodos las Accciones que podra 
+	realizar cada Objeto. 
+	Es decir, las 'Clases' seran el Molde que defina la cantidad de variables (y tipo) que tendra cada 'Objeto' (Atributos)
+	y a su vez tendra la informacion necesaria para indicar las acciones que podra realizar (Métodos). Tambien en la 'Clase' 
+	estara indicado el tipo de Relacion que tiene el 'Objeto' creado respecto a otros 'Objetos'/'Clases'.
+	Ejemplos: Auto, Empleado, CajaDeAhorro, Alumno, etc.
+	
+	En Java cada Clase sera un Objeto de Class (java.lang.Class)
+	
+	
+	• ATRIBUTOS: 
+	
+	Son ADJETIVOS de una CLASE, la describen. Son aquellas 'Caratecristicas Principales' que hacen a nuestro 'Objeto' único y 
+	nos ayudan a describir el mismo. Es decir, aquellas Caracteriscas que diferencian un 'Objeto' de otro.  
+	A nivel sistema lo vamos a materializar como 'Variables' contenidas dentro de una CLASE con un 'tipo de dato' asociado. Los 
+	'Atributos' seran entonces valores contenidos dentro de variables, que cumpliran la funciones de contener toda la 
+	información de un 'Objeto'. Dicha información debería reflejar las caracteristicas principales del Objeto. Los Atributos 
+	pueden ser Datos Primitivos u Objetos. 
+	Los Atributos a diferencia de las variables, tienen un proceso de Inicialización automatico. Es decir, que sin no incializan
+	con ningun valor, los Atributos númericos se inicializan en '0' y los Atributos tipo String se inicializan en  'null'.
+	Recordar que en Java las 'Variables' SI deben estar Inicializadas. 
+	
+	En Java los atributos son variables de la Clase java.lang.reflect.Field
+	
+	• MÉTODOS: 
+	
+	Los MÉTODOS seran las ACCIONES que pueden realizar una Clase u Objeto, motivo por el cual se pueden identificar como 
+	VERBOS. Los Métodos entonces seran un 'conjunto de acciones' definidas dentro de una Clase, y cada Método tendra la 
+	particularidad de realizar una 'Accion' (Tarea/Funcion) determinada. 
+	La principal ventaja de trabajar con 'Métodos' sera que podremos invocar a un 'Conjunto de Instrucciones' con solamente 
+	un nombre (Metodo ()). Cuando se llama a un 'Metodo ()', el programa pasara a ejecutar el 'Bloque de Codigos' 
+	declarado dentro del mismo. Una vez finalizado Bloque de Codigos el Programa continuara con la ejecución principal a partir 
+	del punto donde se produjo el llamado. Los 'Metodos' podemos distinguirlos entre 'Funciones' o 'Procedimientos', es decir, 
+	si retornan un valor al finalizar su ejecución (Funcion) o no (Procedimiento).
+	
+	En Java los métodos son objetos de la clase java.lang.reflect.Method
+	    
+	Los Métodos proporcionan una forma ingresar o intercambiar información que sera a traves de sus 'Parametos'. Es decir, 
+	al momento de declarar el 'Bloque de Instrucciones' habra Elementos declarados genericamente como referencia a un 
+	futuro valor, un 'Parametro'. Al momento de utilizar el Método se invocara el mismo mediante su nombre, y ademas se 
+	indicaran valores para los Parametros que tenga declarados. 
+	
+	    . Parámetros: Son la declaración de uno o mas tipos de datos (Variables u Objetos)
+	    
+	    . Argumentos: Son los valores que se envían al llamar al método.
+	    
+    . MÉTODOS DEPRECATED: '@Deprecated'
+  
+	Cuando a un Método se le antepone un @Deprecated se indicando que actualmente esta funcional, pero en un futuro dicho Método
+	dejara de existir o utilizarse. Generalmente se debe complementar la información con un 'Comentario Java DOC' para indicar
+	el reemplazo o recomendación. 
+    
+    
+    
+    • OBJETOS:
+  	  ¨¨¨¨¨¨¨¨  
+	Son INSTANCIAS de la Clase. El Objeto es la razon de ser de la Clase, es lo que se termina creando con el 'Molde', cada 
+	Objeto respresentara a una situacion en particular de la Clase. Cada Objeto tendra un Estado propio, y estara determinado 
+	por el valor de sus Atributos. Es decir, el 'Estado' de cada Objeto sera el valor de sus Atributos.
+	Si bien cada Objeto tendra sus propios valores, todos los 'Objetos' podran realizar las mismas 'Acciones', es decir, todos 
+	los Objetos tendran los mismos Métodos en común. 
+	
+	Es importante recordar que los Objetos solo viven en Memoria. En el caso de que se necesite registrar datos de forma 
+	permanente, vamos a guardar la informacion de los Obejtos en una Base de Datos.
+	En Java quien se encarga de destruir o liberar la memoria de los Objetos que ya no usamos es el 'Garbage Collector' (GC) y 
+	lo hace de forma automatica administrando la memoria mediante la JVM. 
+	
+	
+	• CONSTRUCTORES:
+  	 ¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+	Son Métodos que van a tener como tarea especifica 'Inicializar' (crear) un Objeto de la Clase. Seran los encargados de 
+	'construir' el Objeto siguiendo el molde de la Clase. En otras palabras, los Constructores seran Métodos encagardos 
+	de crear al Objeto y dejar el mismo listo para su utilizacion (inicializado). Es el único Método que tendrá el mismo 
+	nombre que la Clase, no tienen devolución de parametros y no necesita la palabra reservada 'void' para su declaración. 
+	
+	Existe la 'Sobrecarga de Constructores', motivo por el cual se podra declarar mas de un Constructor por Clase con diferentes
+	finalidades. Se invoca un Constructor usando la palabra clave 'new'.
+	Si una Clase no tiene Constructor, Java al compilar creara de forma predeterminada un Constructor vacío. Cuando se definen 
+	Constructores con Parámetros en una Clase, Java deja de ofrecer el Constructor vacío por defecto, por lo que si se quiere 
+	instanciar un Objeto vacío, se deberá especificar en la Clase dicho constructor vacío.
+	
+	En Java los constructores son objetos de la clase java.lang.reflect.Constructors 
+ 
+ */
+
+package clase05;
+
+public class Programacion_Orientada_Objetos {
+
+}

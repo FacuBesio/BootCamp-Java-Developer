@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Enum.java&apos; to &apos;BootCamp JavaDev - Clase13 (Api Collections, Api Stream &amp; Enums)/src/clase13&apos;&#x0D;&#x0A;- Original project: &apos;BootCamp JavaDev - Clase10 (Enums)&apos;&#x0D;&#x0A;- Destination element: &apos;BootCamp JavaDev - Clase13 (Api Collections, Api Stream &amp; Enums)/src/clase13&apos;&#x0D;&#x0A;- Original element: &apos;clase10.Enum.java&apos;" description="Copy compilation unit" destination="=BootCamp JavaDev - Clase13 \(Api Collections, Api Stream &amp; Enums)/src&lt;clase13" element1="/src&lt;clase10{Enum.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1671913182077" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+/*Cuando utilizamos estas Clases estamos aplicando un patron Data Access Object. Básicamente este patron consiste en centralizar los 
+ procesos de acceso a la Base de Datos evitando inconsistencias y posibles problemáticas cuando esto se realiza a lo largo de la app. 
+Con este patron independizamos la lógica de negocio de la lógica de acceso a datos, obteniendo mayor organización y flexibilidad en nuestro sistema*/
+
+package com.educacionit.dao;
+
+public class AutoDAO {
+
+}

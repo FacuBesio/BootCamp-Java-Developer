@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;clase06.Miembros_Estáticos&apos; to &apos;Miembros_Estaticos&apos;&#x0D;&#x0A;- Original project: &apos;BootCamp JavaDev - Clase06 (Miembros Estáticos)&apos;&#x0D;&#x0A;- Original element: &apos;clase06.Miembros_Estáticos&apos;&#x0D;&#x0A;- Renamed element: &apos;clase06.Miembros_Estaticos&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Miembros_Estáticos&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;clase06{Miembros_Estáticos.java[Miembros_Estáticos" matchStrategy="1" name="Miembros_Estaticos" qualified="false" references="true" similarDeclarations="false" stamp="1670428227457" textual="false" version="1.0"/>
+</session>
