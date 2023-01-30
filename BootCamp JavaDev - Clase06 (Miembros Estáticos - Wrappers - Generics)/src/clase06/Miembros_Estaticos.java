@@ -45,7 +45,8 @@ public class Miembros_Estaticos {
 		
 		//Atributos
 		System.out.println(Clase_Estatica.variableString_Estatica);
-		
+		Clase_Estatica.variableString_Estatica = "asd";
+		System.out.println(Clase_Estatica.variableString_Estatica);
 		//Métodos
 		Clase_Estatica.metodo_Estatico();
 

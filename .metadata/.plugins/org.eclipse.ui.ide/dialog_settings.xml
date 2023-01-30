@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\La vida misma&apos;s project\EducacionIT\JAVA\BootCamp Java Developer\BootCamp JavaDev - Clase17 (JDBC parte2 - MAVEN)"/>
+			<item value="C:\La vida misma&apos;s project\EducacionIT\JAVA\BootCamp Java Developer\BootCamp JavaDev - Clase17 (Maven)\jdbc_parte2"/>
 			<item value="C:\La vida misma&apos;s project\EducacionIT\JAVA\Programas\EclipseWorkspace\Prueba"/>
 			<item value="C:\Users\usuario\Desktop\Entrega02v2\Entrega02v2"/>
 		</list>

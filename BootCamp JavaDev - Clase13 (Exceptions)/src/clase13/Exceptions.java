@@ -6,10 +6,10 @@ Una Excepción es un evento que ocurre durante la ejecución de un programa, que
 Java entonces utilizara las EXCEPCIONES para el manejo de errores, por lo tanto, una EXCEPCIÓN sera un ERROR que se presenta 
 en nuestro software. En Java hay Excepciones que no se pueden evitar pero se pueden gestionar y evitar la interrupción abrupta
 de nuestro sistema, tratando de una forma mas personalizada el problema y así tener un software más robusto y estable. Cuando 
-se da un Error la JVM crea un Objeto de la 'Clase Exception'.  
+se da un error la JVM crea un 'Objeto e' de la clase Exception.  
 
 Las 'Excepciones' entonces son una forma de gestionar las 'condiciones de error' que se dan en los programas. Java utiliza un 
-mecanismo de Excepciones, que seran 'Objetos' que se lanzan (throw) cuando se produce una condición de error. Todas las 
+mecanísmo de Excepciones que seran 'Objetos' que se lanzan (throw) cuando se produce una condición de error. Todas las 
 Excepciones heredan de la 'Clase THROWABLE' subdividiéndose en 'ERROR' y 'EXCEPTION', las primeras son condiciones de error 
 del sistema y las segundas condiciones de error del programa. 
 Las Excepciones de la Clase Error son en las que el sistema no puede hacer nada con ellas, son clasificadas como errores 
@@ -18,7 +18,7 @@ La Clase EXCEPTION la podremos dividir entres las Excepciones CHECKED y UNCHECKE
 Cuando queramos forzar al Usuario a que trate la 'Excepcion' antes de ejecutar el Programa usaremos las Excepciones CHECKED, 
 que seran Subclases directas de 'Exception'. Es decir, el usuario no podra ejecutar el programa, sin capturar y controlar la
 Excepcion que pueda llegar a presentarse. 
-Cuando el usuario no tiene la obligacion de controlar la Excepcion utilzaremos las Excepciones UNCHECKED, que seran subclases 
+Cuando el usuario no tiene la obligacion de controlar la Excepcion utilzaremos las Excepciones UNCHECKED, que serán subclases 
 de 'RunTimeException'. En este caso el usuario podra ejecutar el Programa y en el caso de surgir una Excepcion el mismo se 
 vera interrumpido si no se trato el error. Es decir, el Error surgira en Tiempo de Ejecucion.
 
@@ -28,8 +28,8 @@ vera interrumpido si no se trato el error. Es decir, el Error surgira en Tiempo 
 Las EXCEPTION UNCHECKED seran aquellas Excepciones que NO heredan directamente de la Clase Exception, sino que heredan de la
 Clase RUNTIMEEXCEPTION. Van a tener la particularidad de que NO ES OBLIGATORIO CONTROLARLAS(capturarlas) para poder compilar 
 el programa, ya que se tratan de Excepciones que pueden producirse en 'Tiempo de Ejecución'. Es decir, vamos a poder 
-compilar nuestro programa pero al momento de ejecutar el mismo sera en donde suceda estas Excepciones. En ese caso se 
-cortara el flujo de ejecución sino estan controladas mediante un bloque TRY-CATCH..
+compilar nuestro programa pero al momento de ejecutar el mismo sera donde van a suceder estas Excepciones. En ese caso se 
+cortara el flujo de ejecución, sino estan controladas mediante un bloque TRY-CATCH..
 
 Unchecked Exception
       -- NullPointerException
@@ -58,8 +58,8 @@ Checked Exception
 • TRY - CATCH - FINALLY:
   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 Este Bloque está diseñado para CAPTURAR LAS EXCEPCIONES y ejecutar las instrucciones deseadas acorde al 'error' sucedido. De
-esta forma se evita la interrupción abrupta de la ejecución del programa, para que el mismo pueda terminar de compilar. El
-bloque nos va permitir tambien poder diferenciar las Excepciones para dar a cada una el tratamiento correspondiente. 
+esta forma se evita la interrupción abrupta de la ejecución del programa para que el mismo pueda terminar de compilar. El
+bloque nos va a permitir poder diferenciar las Excepciones para dar a cada una el tratamiento correspondiente. 
        
 . Sintaxis
 
@@ -86,13 +86,13 @@ bloque nos va permitir tambien poder diferenciar las Excepciones para dar a cada
     . Colocar las sentencias que pueden arrojar una Exception (Error) aquí .
     . Estas sentencias tienen mayor costo de hardware.
     . Si se puede ejecutar sin errores, termina el bloque try exitosamente y no se ejecuta el Bloque Catch.
-    . En caso de Exception (error) se detiene el 'Control del Bloque Try' e inicia el 'Control del Bloque Catch.
-    . Si se produce una Excepcion los comandos ubicados debajo de la línea del error no se ejecutaran. 
+    . En caso de Exception (error) se detiene el 'Bloque Try' e inicia el 'Control del Bloque Catch'.
+    . Si se produce una Excepcion los comandos ubicados debajo de la línea del error no se ejecutarán. 
 
     } catch (Exception e) {                                                         //Obligatorio
     Contendrá el código necesario para gestionar la Excepcion (error). Aquí va el código de tratamiento de error, las 
     medidas correctivas. Si se presenta un error en el 'Bloque try' el 'catch' lo capturara creando un 'Objeto e'. 
-    El objeto 'e' contiene toda información sobre la Excepción ocurrida y contiene Métodos para poder transmitir la misma.
+    El 'objeto e' contiene toda información sobre la Excepción ocurrida y contiene Métodos para poder transmitir la misma.
     El Bloque Catch nos va a brindar la posibilidad de discriminar los diferentes tipos de Excepciones y que cada Excepcion 
     tenga su bloque de codigos correctivo a ejecutar por separado. Es importante recordar que todas las Excepciones seran 
     hijas de la Clase Exception, es decir, si no se especifíca un tipo de Excepción en particular, toda Excepción que ocurra 

@@ -4,7 +4,7 @@ public class Clase_Estatica {
 	
 	//Atributos
 	static String variableString_Estatica = "Prueba variableString_Estatica";
-	
+	static int numA;
 	//Métodos
 	
 	static void metodo_Estatico (){

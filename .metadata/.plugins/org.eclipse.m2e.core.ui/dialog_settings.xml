@@ -2,7 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\La vida misma&apos;s project\EducacionIT\JAVA\BootCamp Java Developer\BootCamp JavaDev - Clase17 (Maven)\jdbc_parte2\pom.xml"/>
 			<item value="C:\La vida misma&apos;s project\EducacionIT\JAVA\BootCamp Java Developer\BootCamp JavaDev - Clase16 (JDBC parte1)"/>
+			<item value="C:\La vida misma&apos;s project\EducacionIT\JAVA\BootCamp Java Developer\BootCamp JavaDev - Clase17 (Maven)"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -45,10 +47,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="zxc"/>
+			<item value="com.educacionit"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="proba"/>
+			<item value="jdbc_parte2"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -63,5 +69,9 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>

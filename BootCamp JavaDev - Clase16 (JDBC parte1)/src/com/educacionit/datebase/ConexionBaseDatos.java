@@ -16,11 +16,11 @@ public class ConexionBaseDatos {
 	static String url = "jdbc:mysql://localhost/" + base_datos; // En lugar de localhost, puede ir un ip: 152.0.0.28
 	static String driver = "com.mysql.cj.jdbc.Driver";
 	
-	// Creamos un objeto del tipo Connection
+	// Creamos un objeto del tipo Connection para recirbir la Conexión. 
 	Connection conn = null; 
 	
 	
-	//Construcctor (crea la Conexión)
+	//Se crea la Conexión, en este caso a través del constructor.
 	public ConexionBaseDatos() {
 		
 		try {

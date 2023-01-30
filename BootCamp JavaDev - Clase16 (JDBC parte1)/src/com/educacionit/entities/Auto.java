@@ -59,7 +59,7 @@ public class Auto {
 	
 	@Override
 	public String toString() {
-		return "AutoVO [id_auto=" + id_auto + ", marca=" + marca + ", modelo=" + modelo + ", color=" + color
+		return "Auto [id_auto=" + id_auto + ", marca=" + marca + ", modelo=" + modelo + ", color=" + color
 				+ ", patente=" + patente + "]";
 	}
 

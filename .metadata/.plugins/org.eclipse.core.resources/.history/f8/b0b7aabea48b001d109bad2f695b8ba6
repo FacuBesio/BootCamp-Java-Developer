@@ -1,7 +1,0 @@
-/*Al utilizar este tipo de Clases aplicamos el patron Value Object, anteriormente se lo conocia como DTO (Data transfer Obejct) */
-
-package com.educacionit.modelo;
-
-public class PersonaVO {
-
-}
