@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Ejemplo1.I_File"/>
-    <fullyQualifiedTypeName name="Ejemplo1.Archivo"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="Ejemplo1_Interfaz.FileDiscoDuro"/>
-    <fullyQualifiedTypeName name="Ejemplo2_Aeropuerto.Volador"/>
-    <fullyQualifiedTypeName name="clase06.Clase_Estatica"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
@@ -22,8 +14,6 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
@@ -36,18 +26,13 @@
     <fullyQualifiedTypeName name="Entrega02.Ovni"/>
     <fullyQualifiedTypeName name="educacionIt.entrega02.Interfaces.Aterrizable"/>
     <fullyQualifiedTypeName name="educacionIt.entrega02.Entities.Helicoptero"/>
-    <fullyQualifiedTypeName name="java.lang.Class"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="com.educacionIT.database.ConexionBaseDatos"/>
     <fullyQualifiedTypeName name="com.educacionit.datebase.ConexionBaseDatos"/>
-    <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="com.educacionit.entities.AutoVO"/>
     <fullyQualifiedTypeName name="com.educacionit.dao.AutoDAO"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.PreparableStatement"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.educacionit.exceptions.PersonaInexistenteException"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
@@ -56,8 +41,23 @@
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="educacionit.entrega03.Exceptions.Calculadora_Exception"/>
     <fullyQualifiedTypeName name="educacionit.entrega03.Exceptions.DivisionCero_Exception"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="educacionit.entrega03.Exceptions.RaizCuad_NumNeg_Exception"/>
     <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
     <fullyQualifiedTypeName name="educacionit.entrega03.Entities.Calculadora"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="ar.com.eduit.curso.java.entities.Alumno"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="ar.com.eduit.curso.java.entities.Curso"/>
+    <fullyQualifiedTypeName name="ar.com.eduit.curso.java.repositories.interfaces.I_CursoRepository"/>
+    <fullyQualifiedTypeName name="ar.com.eduit.curso.java.repositories.jdbc.CursoRepositoryDao"/>
+    <fullyQualifiedTypeName name="ar.com.eduit.curso.java.connectors.Connector"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="ar.com.eduit.curso.java.enums.Dia"/>
+    <fullyQualifiedTypeName name="ar.com.eduit.curso.java.enums.Turno"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
 </qualifiedTypeNameHistroy>

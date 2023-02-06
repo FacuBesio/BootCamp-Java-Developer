@@ -143,7 +143,74 @@ Cuando se captura un error a traves del 'Bloque Catch', se creara un 'Objeto e' 
    String          getMessage()            Devuelve un mensaje con un detalle del error capturado.
    void            printStackTrace()       Imprime la pila de errores que se produjo .
    String          getCause()              Devuelve la causa del error o null si la causa es inexistente o desconocida.
+  
+  
+● EXCEPCIONES PROPIAS
+- Primero se debe crear la 'Excepción' que sera lanzada en el caso de que esta ocurra. Para crear dicha Excepcion se creara una 
+nueva Clase que deberá heredar de Exception o RuntimeException.
 
+public class Clase_Exception extends Exception {
+}
+
+- En segundo lugar se va a definir el Método o Clase donde podria producirse la Excepcion mencionada. Para indicar que un 
+determinado Método podría lanzar una Excepci+on vamos a utilzar la palabra reservada 'throws'. 
+
+public void método_ejemplo throws Clase_Exception {
+}
+
+A través de la palabra reservada 'throws' se esta indicando que al ejecutarse el Método podría poducirse la Clase_Exception, 
+motivo por el cual al momento de invocar el Método Java nos solicitar de forma obligatoria controlar la Excepción a través de 
+un Bloque try-catch. 
+
+- Por último dentro del mismo Método a través de la palabra reservada 'throw' se va indicar bajo que condición el método
+lanzara una Excepción.   
+
+public void método_ejemplo throws Clase_Exception {
+	...
+	if (x){
+		throw new Clase_Exception();
+	}
+	...
+}
+  
+En el caso de que la Clase_Excepción herede de Exception el usuario estara oblidago a controlar la Excepción antes de ejecutar
+(Checked) y cualquier Clase_Excepción que herede de RunException no va a obligar a que el usuario tenga que controlar la 
+Excepción para poder compilar, pero podra suceder en tiempo de ejecución sino es controlada (Unchecked).
+
+En resumen la palabra reservada 'THROWS' se utiliza en la firma del Método o Clase e indica que podría llegar a lanzar una 
+Excepcion, que dependiendo de si se trata de una Checked o Uncheked deberá ser tratada o no.
+La palabra reservada 'THROW' sirve para lanzar la Excepción.  
+
+● TRY WITH RESOURCES
+Java 7 incorpora la sentencia try-with-resources con el objetivo de cerrar los recursos de forma automática en la 
+sentencia 'try - catch' y hacer más simple el código. Para ello seguido al 'try' se colocara entre () los procesos que se 
+deseen cerrar de forma automatica al terminar el bloque, motivo por el cual solo se podrán utlizar elementos que hereden de la 
+Clase Autocloseable. 
+Si en el medio de la ejecución de un bloque try-catch surge una Excepción que es capturada por el bloque 'catch' es posible que 
+queden procesos abiertos. Al finalizar el bloque try-catch se cerraran automaticamente Aquellos procesos que esten ubicados 
+entre los () seguido del 'try' sin necesidad de escribir codigo. Es decir, haya sucedido o no una Excepcion dentro del Bloque
+try-catch se cerraran si o si los procesos declarados entre los ().
+
+Los procesos a trabajar deben tener implementada la Interfaz 'AutoCloseable' o 'Closeable' ya que por medio de ella Java detecta 
+que posee el Método Close y así invocarlo al terminar de utilizar el recurso. La mayoría de Clases relacionadas con Entrada y 
+Salida implementan la Interfaz AutoCloseable como las relacionadas con el sistema de ficheros y flujos de red como InputStream, 
+también las relacionadas con la conexión de base de datos mediante JDBC con Connection.  
+
+
+	try ( -- procesos que hereden de Closeable o AutoCloseable -- ) {        
+        	...
+        } catch (Exception e) {
+          ...
+	}
+
+
+.EJEMPLO: 
+
+  	try ( FileReader in = new FileReader(new File("texto.txt")) ) {        
+        	...
+        } catch (Exception e) {
+          ...
+	}
 
 */
 
@@ -177,13 +244,14 @@ public class Exceptions {
         } 
         System.out.println("... Continuacion de ejecución del programa ");
         
+        // • UNCHECKED (Runtime Exception)
         System.out.println("");
         System.out.println("• UNCHECKED: ");
         /* Cualquier Método de la Clase GeneradorDeExcepciones puede ejecutarse sin estar controlado por una estructura
         try-catch, ya que se tratan de Exceptions Uncheked, es decir, Exceptions que daran error en tiempo de Ejecución.
+        Exceptions que heredan de RUNTIME EXCEPTION.
         */
         System.out.println("- GeneradorDeExcepciiones1: ");   
-        
         try {
                 GeneradorDeExcepciones.generarIndex_Out_of_Bounds_Exception();  //Excepcion de Indice fuera de Limites
         		//GeneradorDeExcepciones.generarArithmetic_Exception();           // Arithmetic Exception
@@ -196,7 +264,6 @@ public class Exceptions {
         
         System.out.println("");
         System.out.println("- GeneradorDeExcepciiones2: ");   
-      
         try {
             GeneradorDeExcepciones.generarIndex_Out_of_Bounds_Exception();  
     		//GeneradorDeExcepciones.generarArithmetic_Exception();           
@@ -212,25 +279,47 @@ public class Exceptions {
         } 
         System.out.println("El programa termina normalmente!!");
         
+        // • CHECKED
         System.out.println("");
         System.out.println("• CHECKED: ");
-        /* El sistema no permite compilar si la incializacion del Objeto File esta controlado mediante una estructura 
-        try-catch, ya que en el la Clase FileReader esta declarada la posibilidad de una Exception a través del 
-        
-        public FileReader(File file) throws FileNotFoundException {
-        
-        ...
-        
-        }
+        /* El sistema no permite compilar si la incializacion del Objeto FileReader no esta controlado mediante una estructura 
+        try-catch.
         */
         
         try {
 			FileReader in = new FileReader(new File("texto.txt"));
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println(e);
 		}
 	
-	
+        
+        System.out.println();
+        System.out.println(". Excepciones Propias: Venta de Pasajes:");   
+        Vuelo vuelo1=new Vuelo("AER1234", 100);
+        Vuelo vuelo2=new Vuelo("LAT1111", 100);
+        System.out.println(vuelo1);
+        System.out.println(vuelo2);
+
+/*  El Compilador fuerza a tratar el Metodo mediante un Try - Catch si o si, ya que esta definido en el Metodo ' venderPasajes '
+    mediante la palabta reservada 'throws' la posibilidad de que pueda llegar a tener una Excepcion y debe ser tratada.
+*/
+        try {
+            vuelo1.venderPasajes(40);
+            vuelo1.venderPasajes(20);
+            vuelo1.venderPasajes(80);                                                        
+        } catch (NoHayMasPasajesException e)    {System.out.println(e + " (Desde NoHayMasPasajesException)");
+        } catch (Exception e)                   {System.out.println(e + " (Desde Exception)");
+        }
+         
+        // ▬ Try - Catch with resources 
+        /* Todo lo que se indique dentro de los parentesis deberá ser Autocloseable y de esta forma Java ejecutara el 
+        método .close() siempre que finalice el Bloque try - catch, se haya producido o no una Excepcion-*/
+        try ( FileReader in = new FileReader(new File("texto.txt")) ) {        //Usando try with resources JDK 7
+        	System.out.println(in.read());
+        } catch (Exception e) {
+          System.out.println(e);
+        }
 	}
-	
+		
 }
